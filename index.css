@@ -1,0 +1,67 @@
+#main #calendar{
+
+    background-color: cornflowerblue;
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+#main #calendar_img{
+    width: 100%;
+    height: 50vh;
+
+    background-image: url('/img/adult-blur-camera-dirt-road-610293.jpg');
+    background-position: top;
+    background-size: unset;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+
+    
+    display: flex;
+}
+#main #calendar_img p{
+
+    font-size: 9vh;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
+#main #calendar #days{
+
+    grid-area: 1/1/1/8;
+
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-row: 1fr;
+
+    background-color: tomato;
+    color: teal;
+}
+#main #calendar #days > *{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main #calendar .day{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: skyblue;
+}
+#main #calendar .day p{
+
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}

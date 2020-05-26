@@ -1,0 +1,148 @@
+/* #done */
+.container-fluid .row .col-12 #railWay #done{
+
+
+    /* display: flex;
+    flex: 1; */
+    width: 100%;
+    
+
+}
+
+/* #Main1 */
+.container-fluid .row .col-12 #railWay #Main1{
+
+    flex: 1;
+    position: relative;
+}
+
+/* #Main2 */
+.container-fluid .row .col-12 #railWay #Main2{
+
+    flex: 1;
+    position: absolute;
+    z-index: 1;
+
+    width: 0px;
+    height: 90%;
+
+    display: none;
+
+    background-color: crimson;
+
+}
+
+
+/* data */
+.container-fluid .row .col-12 #railWay #Main2 #data{
+
+    display: flex;
+    flex-direction: column;
+}
+.container-fluid .row .col-12 #railWay #Main2 #data > p{
+
+
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: wheat;
+}
+
+/* #INTO */
+.container-fluid .row .col-12 #railWay #Main2 #data #INTO{
+
+    display: flex;
+
+}
+.container-fluid .row .col-12 #railWay #Main2 #data #INTO #x{
+
+    width: 20px;
+
+}
+.container-fluid .row .col-12 #railWay #Main2 #data #INTO > p{
+
+    margin: auto;
+    font-size: large;
+    font-weight: bold;
+
+    /* display: flex;
+    flex: 1; */
+}
+
+/* #moth */
+.container-fluid .row .col-12 #railWay #Main2 #data #moth{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.container-fluid .row .col-12 #railWay #Main2 #data #moth > div{
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40px;
+
+    border-radius: 25rem;
+}
+.container-fluid .row .col-12 #railWay #Main2 #data #moth > div > p{
+
+
+    text-align: center;
+}
+
+/* #year */
+.container-fluid .row .col-12 #railWay #Main2 #data #year{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.container-fluid .row .col-12 #railWay #Main2 #data #year > div{
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 40px;
+
+    border-radius: 25rem;
+}
+.container-fluid .row .col-12 #railWay #Main2 #data #year > div > p{
+
+
+    text-align: center;
+}
+
+
+
+/* #railWay */
+.container-fluid .row .col-12 #railWay{
+
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+}
+
+/* event */
+.container-fluid .row .col-12 #railWay #event{
+
+    flex: 1;
+
+    background-color: lavender;
+
+    /* position: absolute; */
+    /* width: 0px;
+    height: 90%;
+
+    display: none;
+
+    z-index: 1; */
+    /* left: 100%; */
+
+}
+/* card */
+.container-fluid .row .col-12 #railWay #event .container .row .card{
+
+}

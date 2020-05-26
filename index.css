@@ -1,35 +1,192 @@
-#main #calendar{
+#main #calendar #per_calender #rail_way{
 
-    background-color: cornflowerblue;
-    height: 100vh;
-    width: 100%;
+
+    max-width: 100%;
+    
+
+
+}
+
+#main #calendar #per_calender #rail_way #train{
+
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
+    
+    position: relative;
+
+}
+#main #calendar #per_calender #rail_way .moth{
+
+    flex: 0;
+    min-width: 100%;
+    position: relative;
+}
+
+
+
+
+#main #calendar #per_calender #rail_way .moth .data{
 
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(7,1fr);
     grid-row-gap: 5px;
     grid-column-gap: 5px;
+
+    text-align: center;
+;
+
 }
+
+#main #calendar #per_calender #rail_way .moth .data .raw{
+
+
+    height: 78px;
+    background-color: whitesmoke;
+    color: rgb(0, 118, 214);
+    font-size: medium;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#main #calendar #per_calender #rail_way .moth .data .raw:hover{
+
+
+
+    background-color:   rgb(0, 118, 214);
+
+    color:whitesmoke;
+
+    font-size: large;
+    font-weight: bolder;
+
+
+}
+
+
+
+
+@media all and (max-width:600px){
+    #main #calendar #per_calender #rail_way .moth .data .raw{
+
+
+        height: 50px;
+        background-color: whitesmoke;
+        color: rgb(0, 118, 214);
+        font-size: medium;
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+}
+
+@media all and (max-width: 500px) { 
+
+
+    #main #calendar_img{
+
+        height: 40vh !important;
+
+    }
+
+}
+
+
 #main #calendar_img{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 
-    background-image: url('/img/adult-blur-camera-dirt-road-610293.jpg');
+   
+
+    background-image: url('/img/photo-1519389950473-47ba0277781c.png');
     background-position: top;
-    background-size: unset;
+    background-size: 100% 100%;
     background-clip: padding-box;
     background-repeat: no-repeat;
 
     
     display: flex;
+    flex-direction: column;
+
 }
-#main #calendar_img p{
 
-    font-size: 9vh;
+#main #calendar_img #back{
 
+    width: 100%;
     display: flex;
-    align-items: flex-end;
+    background-color: gray;
+    opacity: 0.7;
+
+
 }
+#main #calendar_img #back > p{
+
+
+    height: 100%;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    color: crimson;
+
+}
+#main #calendar_img #back #back_but{
+
+    padding: 4px;
+    margin-left: 6px;
+
+
+}
+#main #calendar_img #bottom{
+
+    justify-self: flex-end;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 100%;
+
+}
+#main #calendar_img  #bottom p{
+
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: auto;
+   margin-right: auto;
+   margin-left: auto;
+   color: #3918cc;
+   color: rgb(0, 118, 214);
+
+   border: solid;
+   padding: 21px;
+   background: rgba(139,147,160,.6);
+
+   border-radius: 9rem;
+
+}
+#main #calendar_img  #bottom button{
+
+    justify-self: flex-end;
+    height: 39px;
+    width: 50px;
+    margin-left: 6px;
+    margin-top: auto;
+
+
+}
+
+
 
 
 #main #calendar #days{
@@ -40,16 +197,23 @@
     grid-template-columns: repeat(7,1fr);
     grid-row: 1fr;
 
-    background-color: tomato;
-    color: teal;
+    background-color: crimson;
+
 }
 #main #calendar #days > *{
 
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 63px;
+    border: 2px solid whitesmoke;
 }
+#main #calendar #days > * > p{
 
+    color: wheat;
+    font-weight: bolder;
+    font-size: large;
+}
 
 #main #calendar .day{
 
@@ -64,4 +228,144 @@
     color: white;
     font-weight: bolder;
     font-size: x-large;
+}
+
+
+.u{
+
+    display: block;
+
+    width: 70px;
+    height: 70px;
+
+    height: 78px;
+    background-color: whitesmoke;
+    color: rgb(0, 118, 214);
+    font-size: medium;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.u:hover{
+
+
+
+    background-color:   rgb(0, 118, 214);
+    color:whitesmoke;
+    font-size: large;
+    font-weight: bolder;
+
+
+}
+
+
+#mou{
+
+    margin-left: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(4,70px);
+
+
+}
+#mou button{
+    margin: 4px;
+    padding: 4px;
+}
+#mou #back{
+    grid-area: 1/1/1/5;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    background-color: gray;
+}
+#mou #back > p{
+
+
+    height: 100%;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mou #back > button{
+
+    justify-self: right;
+    font: 1em sans-serif;
+
+}
+
+
+
+#year{
+
+    
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(1,70px);
+
+
+}
+#year > #back{
+
+    grid-area: 1/1/1/5;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    background-color: gray;
+}
+#year >  #back > p{
+
+
+    height: 100%;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#year #cont{
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(3,70px);
+
+    
+}
+
+
+
+/* helper classsss */
+
+.Back{
+
+    width: 100%;
+    display: flex;
+    background-color: gray;
+    opacity: 0.7;
+}
+
+.Back > p{
+
+
+    height: 100%;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    color: crimson;
+
+}
+.Back #back_but{
+
+    padding: 4px;
+    margin-left: 6px;
+
+
 }
